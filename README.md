@@ -1,8 +1,12 @@
 # Most Capable Agent System Prompt
 
-This is a prompt that builds the most capable agentic system possible — a self-improving system that can do anything a capable human can do on a computer: write software, conduct scientific research, run a company, automate workflows, browse the web, control the desktop, analyze data, manage operations, and handle complex multi-month projects end to end. It learns from every task, every failure, and every user correction, and gets better over time.
+A prompt that builds the most capable, self-improving agentic system possible.
 
-Paste it into [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), OpenClaw, OpenCode, OpenHands, the [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent. It will assess its environment, bootstrap itself (even from an empty directory), and start building.
+**What it does** — Handles anything a skilled human can do on a computer: software engineering, scientific research, running a company, data analysis, browser and desktop automation, and complex multi-month projects. It learns from every task and gets better over time.
+
+**How it works** — Paste it into any coding agent. It will either wrap that agent with a harness (plans, skills, evals, self-improvement loops) or build a new system from scratch using an agent SDK. Works even from an empty directory.
+
+**Compatible with** — [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent.
 
 ### How to use
 
