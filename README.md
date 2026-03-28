@@ -4,11 +4,11 @@ A prompt that builds the most capable, self-improving agentic system possible.
 
 **What it does** — Handles anything a skilled human can do on a computer: software engineering, scientific research, running a company, data analysis, browser and desktop automation, and complex multi-month projects. It learns from every task and gets better over time.
 
-**How it works** — Paste it into any coding agent. It will either wrap that agent with a harness (plans, skills, evals, self-improvement loops) or build a new system from scratch using an agent SDK. Works even from an empty directory.
+**How it works** — Paste it into any coding agent. It will either wrap that agent with a harness (plans, skills, evals, self-improvement loops) or build a new system from scratch using an agent SDK.
 
 **Compatible with** — [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent.
 
-### How to use
+### Quick start
 
 1. Copy the prompt below
 2. Paste it into your agent (system prompt, CLAUDE.md, or first message)
