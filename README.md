@@ -12,6 +12,8 @@ The goal is to build an agent system that can handle the full spectrum of comput
 
 It should also steadily turn repeated successful work into reliable automations and continuously self-improve from real usage, failures, evals, and new ideas. The target is not a static assistant. The target is a compounding operating system that gets more capable, more reliable, and more autonomous over time.
 
+![Most Capable Agent System Architecture](most_capable_agent_system_architecture.svg)
+
 Copy the prompt below into the agent system you want to use.
 
 ```text
