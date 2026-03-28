@@ -4,12 +4,10 @@ Paste this prompt into your coding agent of choice and it will build the most ca
 
 It will either wrap your agent with a harness (plans, skills, evals, self-improvement loops) or build a new system from scratch using an agent SDK.
 
-**Works with** [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), [Cursor](https://www.cursor.com), [Antigravity](https://antigravity.dev), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent.
-
 ### Quick start
 
 1. Copy the prompt below
-2. Paste it into your agent (system prompt, CLAUDE.md, or first message)
+2. Paste it into your agent (system prompt, CLAUDE.md, or first message) — works with [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), [Cursor](https://www.cursor.com), [Antigravity](https://antigravity.dev), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent
 3. It starts building immediately
 
 ![Most Capable Agent System Architecture](most_capable_agent_system_architecture.svg)
