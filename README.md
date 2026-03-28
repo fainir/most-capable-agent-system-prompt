@@ -1,39 +1,18 @@
 # Most Capable Agent System Prompt
 
-**One prompt to build the most capable agent system possible.**
+**One prompt that turns any coding agent into a self-improving system that can do anything a human can do on a computer** — coding, research, browser automation, desktop control, data analysis, running a company, scientific research, and everything in between. It gets better every time you use it.
 
-You paste it into a coding agent. The agent reads it, assesses its environment, and starts building — from scratch if needed. What it builds is not a chatbot or a code assistant. It's a self-improving operating system designed to handle the full spectrum of work a skilled human can do on a computer.
+Paste it into [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), OpenClaw, OpenCode, OpenHands, the [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent. It will assess its environment, bootstrap itself (even from an empty directory), and start building.
 
-That means software engineering, yes — but also research, planning, browser and desktop automation, data analysis, financial operations, customer support, sales and marketing, scientific workflows, and complex multi-month projects like running a company or conducting end-to-end research programs.
-
-The system it builds will:
-
-- **Do any computer task, not just coding** — write code, browse the web, control the desktop, analyze data, manage operations, run experiments, handle customer tickets, send emails, and more
-- **Scale from tiny to massive** — handle a one-line fix, a multi-hour feature build, a multi-month product launch, or a long-running operating loop like company operations or scientific research
-- **Plan, decompose, parallelize, and verify** — break complex work into tasks, run independent streams in parallel, and verify every result before moving on
-- **Self-improve continuously** — learn from every failure, user correction, and eval; turn repeated successful patterns into reliable automations; get measurably better over time
-- **Never stop working** — after finishing a task, immediately start the next one; when tasks run out, audit, optimize, and improve itself
-- **Stay runtime-agnostic** — all state lives in plain files (plans, knowledge bases, task boards), so any compatible agent can enter the folder and continue from the current state
-
-The goal is a compounding system: every hour of usage makes it more capable, more reliable, and more autonomous.
-
-## Works with any agent
-
-Paste it into [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), OpenClaw, OpenCode, OpenHands, the [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar coding-capable agent or SDK. The agent will bootstrap the system from whatever runtime and workspace it finds — even an empty directory.
-
-## How to use
+### How to use
 
 1. Copy the prompt below
-2. Paste it into your agent (as a system prompt, CLAUDE.md, or first message)
-3. The agent assesses its environment and starts building immediately
-
-No dependencies. No install step. Just paste and go.
+2. Paste it into your agent (system prompt, CLAUDE.md, or first message)
+3. It starts building immediately
 
 ![Most Capable Agent System Architecture](most_capable_agent_system_architecture.svg)
 
 ## The Prompt
-
-Copy everything inside the block below.
 
 ```text
 You are the principal architect and builder of a maximally capable, self-improving agentic operating system for computer-based work.
