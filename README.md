@@ -1,16 +1,99 @@
 # Most Capable Agent System Prompt
 
-Paste this prompt into your coding agent of choice - Claude Code, Codex, Cursor, or any similar tool - and it will build the most capable, self-improving agentic system possible. Either as a harness wrapper around your existing agent or as fresh code built from scratch based on your preference. A system that can handle software engineering, scientific research, running a company, data analysis, browser and desktop automation, and complex multi-month projects. It learns from every task and gets better over time.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-### Quick start
+A copy-paste system prompt for people who use coding agents like Claude Code, Codex, or Cursor: paste it in, and your agent starts building a durable, self-improving agent system for general computer work.
 
-1. Copy the prompt below
-2. Paste it into your agent (system prompt, CLAUDE.md, or first message) - works with [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), [Cursor](https://www.cursor.com), [Antigravity](https://antigravity.google), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent
-3. It starts building immediately
+Left alone, most agent sessions forget everything between runs, call work done without checking it, and stall once a task is finished. This prompt gives your agent a full architecture and operating doctrine - task graphs, verification, file-based memory, evals, governance, and a self-improvement loop - and tells it to start building right away, either as a harness wrapper around your existing agent or as fresh code built from scratch, based on your preference. The target is one system that can handle software engineering, scientific research, running a company, data analysis, browser and desktop automation, and complex multi-month projects, and that learns from every task.
+
+**What the agent is told to do:**
+
+- Inspect your workspace, ask only the questions it cannot answer itself, and write a runtime capability matrix and an implementation contract.
+- Set up a file-based project operating system (`AGENTS.md`, `plan.md`, `tasks.md`, `knowledge.md`, `FAILURE.md`, and more) so any compatible agent can continue the work from the folder alone.
+- Prove one closed loop end to end as the first milestone: goal, task graph, execution, verification, memory update, visibility to a human, and one lesson learned.
+- Keep going from there: control plane, workers, memory, model routing, approvals and budgets, an eval harness, and a self-improvement loop, in the order the prompt's `BUILD ORDER` section lays out.
 
 ![Most Capable Agent System Architecture](most_capable_agent_system_architecture.svg)
 
+## Contents
+
+- [Quick start](#quick-start)
+- [How to use it](#how-to-use-it)
+- [What to expect](#what-to-expect)
+- [FAQ](#faq)
+- [The Prompt](#the-prompt)
+- [Research Appendix](#research-appendix)
+- [Subsystem Reference Map](#subsystem-reference-map)
+- [Notes](#notes)
+- [License](#license)
+
+## Quick start
+
+1. Copy the prompt: use the copy button on the code block under [The Prompt](#the-prompt), or the terminal command below.
+2. Start your agent in an empty folder (or in the repo you want it to extend) and paste the prompt as your first message. It works with [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), [Cursor](https://cursor.com), [Antigravity](https://antigravity.google), [OpenClaw](https://github.com/openclaw/openclaw), [OpenCode](https://opencode.ai), [OpenHands](https://github.com/OpenHands/OpenHands), the [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview), or any similar agent that can read and write files and run commands.
+3. Answer the few questions it asks. Then it starts building.
+
+To copy just the prompt from a terminal on macOS:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/fainir/most-capable-agent-system-prompt/main/README.md | awk '/^```text$/{f=1;next} f&&/^```$/{exit} f' | LANG=en_US.UTF-8 pbcopy
+```
+
+On Linux, replace `| LANG=en_US.UTF-8 pbcopy` with `| xclip -selection clipboard` or `| wl-copy`. To save it to a file instead, replace it with `> prompt.md`.
+
+## How to use it
+
+| Option | How | Trade-offs |
+| --- | --- | --- |
+| **First message** (recommended) | Paste it as the first message of a fresh session. From a saved file: `claude "$(cat prompt.md)"` or `codex "$(cat prompt.md)"`. | Simplest, and works in any agent. It is a one-time bootstrap: the prompt tells the agent to write a short operating summary and project files, and those carry the work into later sessions. |
+| **System prompt** | Claude Code: `claude --append-system-prompt-file prompt.md`. Agent SDK or API: pass it as the system prompt. | Stays in force for the whole session, but is sent with every request. In Claude Code, use `--append-system-prompt-file` rather than `--system-prompt-file`, which replaces Claude Code's built-in instructions. |
+| **Instructions file** (`CLAUDE.md` or `AGENTS.md`) | Save it as the project's instructions file. | Loaded into every session, and far longer than these files usually are. Claude Code suggests keeping `CLAUDE.md` under 200 lines. Codex reads only the first 32 KiB of `AGENTS.md` by default and this prompt is about 108 KiB, so raise `project_doc_max_bytes` (for example to `131072`) in `~/.codex/config.toml`. The prompt also tells the agent to write its own `AGENTS.md`, so keep a copy elsewhere. |
+
+### Harness wrapper or from scratch
+
+The prompt supports both paths (see `IMPLEMENTATION POSTURE` inside it):
+
+- **Harness-wrapper mode** keeps your current agent (Claude Code, Codex, and so on) as the execution engine and builds the task system, file protocol, evals, and control plane around it. This is the default when the prompt runs inside a strong existing agent.
+- **Native runtime mode** builds the system directly on an agent SDK, for when you want deeper control.
+
+To choose, add a line after the prompt, for example `Use harness-wrapper mode around Claude Code.` or `Use native runtime mode on the Claude Agent SDK, in TypeScript.`
+
+## What to expect
+
+- **It is long.** About 2,950 lines, 16,800 words, and 111,000 characters: roughly 23,000 tokens with OpenAI's tokenizers (measured with `tiktoken`), and other tokenizers, such as Claude's, may count more. That fits easily in a modern context window, but as a system prompt or instructions file it is sent with every request (prompt caching helps).
+- **It builds instead of chatting.** The prompt treats an architecture essay without real files as failure. Expect the agent to inspect the workspace, ask a short batch of questions, and then write files: an operating summary for itself, a capability matrix, an implementation contract, planning files, and the `now`, `next`, `blocked`, `improve`, and `recurring` queues. Then it starts on the first milestone.
+- **It is a multi-component system.** Over time the agent works toward a control plane, workers, a task graph engine, layered memory, model routing, approvals and budgets, evals, and a self-improvement loop. Expect many files, long sessions, and real token spend.
+- **It keeps going.** Its stopping rules say to continue until the current milestone is implemented and verified, a real blocker needs you, or you pause or redirect it.
+- **Run it somewhere safe.** It writes files and runs commands. Start in a dedicated folder under git, keep your agent's normal approval settings, and avoid fully unattended modes on a machine with credentials you care about.
+
+## FAQ
+
+**Does it work with model X or tool Y?**
+It is plain text with no tool-specific syntax, so it works with any agent that can read and write files and run shell commands. It asks for a lot of long-horizon work, so results depend heavily on the model: strong agentic models with large context windows follow it best. In a chat-only interface without tools, the model can only plan, not build.
+
+**Why is it so long?**
+The target system is ambitious, and the prompt says so up front. To keep the length from getting lost during long runs, it tells the agent to read the core sections first, write a compact operating summary for itself, and re-read that summary as it works.
+
+**Can I trim it?**
+Yes. The prompt's `READER CONTRACT` names the core sections: `NON-NEGOTIABLE DESIGN BETS`, `RELIABILITY MATH AND HARNESS ENGINEERING`, `RECOMMENDED DEFAULT IMPLEMENTATION CHOICES`, `BUILD ORDER`, `FIRST MILESTONE DEFINITION`, `NON-NEGOTIABLE RULES`, and `INITIAL ACTIONS YOU MUST TAKE NOW`. Keep those. Good candidates to cut are the interface sections (`END-USER INTERFACE DOCTRINE` through `INTERFACE SUCCESS CRITERIA`) if you do not need a UI yet, the company or science sections if they do not apply to you, and the reference list (`RESEARCH-INFORMED SYSTEMS TO STUDY AND STEAL FROM` through `CROSS-CUTTING META-LESSONS FROM THE ECOSYSTEM`).
+
+**How do I customize it?**
+Leave the prompt as is and add a short block of your own after it. That way you can drop in a newer version of the prompt later without redoing your edits. For example:
+
+```md
+Project constraints:
+- Runtime: Claude Code on macOS. Use harness-wrapper mode.
+- Stack: TypeScript and SQLite.
+- First milestone: coding tasks in this repository only.
+- Ask before any paid API call, deploy, or git push.
+```
+
+**Can I point it at an existing codebase?**
+Yes. Before scaffolding anything, it checks whether there is an existing repository to extend. Run it on a branch so you can review what it changes.
+
 ## The Prompt
+
+<!-- The terminal copy command in Quick start extracts the first ```text block in this file. Keep the prompt as the only ```text block. -->
 
 ```text
 You are the principal architect and builder of a maximally capable, self-improving agentic operating system for computer-based work.
@@ -3226,3 +3309,7 @@ Use this map when you are building or improving one subsystem at a time. Study t
 - If you want, I can also turn this into:
   - a version optimized for your specific runtime
   - a shorter “bootstrap first, improve forever” variant
+
+## License
+
+[MIT](LICENSE)
