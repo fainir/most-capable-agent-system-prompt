@@ -5,7 +5,7 @@ Paste this prompt into your coding agent of choice - Claude Code, Codex, Cursor,
 ### Quick start
 
 1. Copy the prompt below
-2. Paste it into your agent (system prompt, CLAUDE.md, or first message) - works with [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), [Cursor](https://www.cursor.com), [Antigravity](https://antigravity.dev), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent
+2. Paste it into your agent (system prompt, CLAUDE.md, or first message) - works with [Claude Code](https://code.claude.com/docs/en/overview), [OpenAI Codex](https://openai.com/codex), [Cursor](https://www.cursor.com), [Antigravity](https://antigravity.google), OpenClaw, OpenCode, OpenHands, [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), or any similar agent
 3. It starts building immediately
 
 ![Most Capable Agent System Architecture](most_capable_agent_system_architecture.svg)
