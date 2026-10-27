@@ -3306,9 +3306,7 @@ Use this map when you are building or improving one subsystem at a time. Study t
 ## Notes
 
 - This prompt is intentionally runtime-agnostic and standalone. It assumes no dependency on any specific existing codebase and is designed to help an agent build a durable platform from whatever environment it starts in.
-- If you want, I can also turn this into:
-  - a version optimized for your specific runtime
-  - a shorter “bootstrap first, improve forever” variant
+- For a version tuned to one runtime, or a shorter "bootstrap first, improve forever" variant, see the [FAQ](#faq): append your runtime constraints after the prompt, or trim the optional sections.
 
 ## License
 
