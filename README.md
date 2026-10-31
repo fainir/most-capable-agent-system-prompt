@@ -3323,3 +3323,5 @@ Use this map when you are building or improving one subsystem at a time. Study t
 - [flipback](https://github.com/fainir/flipback) - an automatic `/goal` for every turn: sends Claude Code back when it stops early
 - [recall](https://github.com/fainir/recall) - your Claude Code memory in every agent, over MCP
 - [All projects](https://nirfeinste.in/#open-source)
+
+Products by the same author: [Betterloop](https://betterloopai.com/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) (one script tag, then a ranked list of what to fix on your site, readable by your coding agent over MCP) and [VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) (direct an AI film as a 3D storyboard before you pay to render it).
