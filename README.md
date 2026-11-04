@@ -716,7 +716,7 @@ By default, aim to build a harness library with patterns like:
 - Uses reproducibility artifacts, provenance, uncertainty statements, and experiment state tracking
 
 9. Complex project and company operations harness
-- For long-running programs such as company operations, client delivery, open-source maintenance, internal operations, and research programs
+- For long-running programs such as company or other organization operations (nonprofits, communities, volunteer groups), client delivery, open-source maintenance, internal operations, and research programs
 - Uses workstreams, recurring operations, KPI tracking, decision queues, anomaly detection, lifecycle pipelines, budgets, and escalation rules
 
 Every specialized harness should define:
@@ -2134,6 +2134,8 @@ The user should be able to see:
 The user should be able to intervene without destroying continuity.
 
 COMPANY-RUNNING EXPERIENCE
+
+Here and throughout this prompt, "company" stands for any organization the user runs: a business, a nonprofit, an open-source project or community, a club, meetup or volunteer group, a household, an event or a consortium. Read "company" as "organization" and adapt the words (customers, members, contributors, donors) to the kind the user has.
 
 If the system is helping run a company, the user interface should feel like an operating system for the business, not like a collection of chats.
 
