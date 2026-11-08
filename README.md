@@ -3329,3 +3329,5 @@ Use this map when you are building or improving one subsystem at a time. Study t
 - [All projects](https://nirfeinste.in/#open-source)
 
 Products by the same author: [Run a free Betterloop check](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to see what to fix on your site, [open the Plainer starter workspace](https://plainer.app/demo?example=starter&utm_source=github&utm_medium=readme&utm_campaign=mcasp) to try notes and boards without an account, or [try VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to direct a 3D storyboard before paying to render.
+
+**Example from the free AI Your Work assessment.** A small services team spending 10 hours a week on lead follow-up can capture enquiries in its CRM and draft replies for a person to approve. [Answer seven questions about one workflow](https://aiyourwork.chat/consult?utm_source=github&utm_medium=readme&utm_campaign=agent-workflow-assessment) and provide an email at the end to see your free recommendations.
