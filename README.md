@@ -17,6 +17,8 @@ Left alone, most agent sessions forget everything between runs, call work done w
 
 > **Want a ready-made version today?** [agent-harness](https://github.com/fainir/agent-harness) packages the operating rules this prompt asks your agent to build (done means verified with evidence, ledgers that keep long work going, one owner action at a time) as installable skills and hooks for Claude Code and Codex. Use this prompt to have your agent build its own system; use agent-harness to start from a working one.
 
+**Try a working example:** [Apps and starter projects](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#projects) · [Open-source tools](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#open-source).
+
 ## Contents
 
 - [Quick start](#quick-start)
@@ -3326,4 +3328,4 @@ Use this map when you are building or improving one subsystem at a time. Study t
 - [recall](https://github.com/fainir/recall) - your Claude Code memory in every agent, over MCP
 - [All projects](https://nirfeinste.in/#open-source)
 
-Products by the same author: [Betterloop](https://betterloopai.com/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) (one script tag, then a ranked list of what to fix on your site, readable by your coding agent over MCP) and [VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) (direct an AI film as a 3D storyboard before you pay to render it).
+Products by the same author: [Run a free Betterloop check](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to see what to fix on your site, [open the Plainer starter workspace](https://plainer.app/demo?example=starter&utm_source=github&utm_medium=readme&utm_campaign=mcasp) to try notes and boards without an account, or [try VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to direct a 3D storyboard before paying to render.
