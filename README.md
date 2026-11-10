@@ -21,6 +21,8 @@ Left alone, most agent sessions forget everything between runs, call work done w
 
 **A real website QA check.** The demo site’s HTTPS page worked, and its old HTTP URL still served the page. [Watch the 30-second redirect walkthrough](https://github.com/fainir#two-things-i-built-and-tested) and [run the same free check on your site](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=https-redirect-short).
 
+If you maintain several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=mcasp-multi-site).
+
 For AI and ML news, [read MyFeed's public topic feed](https://myfeed.space/ai?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed) or [add it to your RSS reader](https://myfeed.space/ai/rss.xml?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed).
 
 ## Contents
