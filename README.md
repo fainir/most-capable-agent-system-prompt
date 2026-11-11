@@ -31,6 +31,7 @@ For AI and ML news, [read MyFeed's public topic feed](https://myfeed.space/ai?ut
 
 - [Quick start](#quick-start)
   - [Try a prompt regression offline](#try-a-prompt-regression-offline)
+  - [Test the first click in a browser](#test-the-first-click-in-a-browser)
 - [How to use it](#how-to-use-it)
 - [What to expect](#what-to-expect)
 - [FAQ](#faq)
@@ -61,6 +62,10 @@ On Linux, replace `| LANG=en_US.UTF-8 pbcopy` with `| xclip -selection clipboard
 [Watch the 54-second Hired in 60 drill](https://youtu.be/frJjFcm0njk) for a related Python interview example that shows how a failing test exposes a bad edit.
 
 For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com/l/rbzbacf?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-review-pack) includes a free worked Git question and a sample PDF. The full pack costs $12.
+
+### Test the first click in a browser
+
+[Walk through the OpenWorld startup repair](examples/openworld-first-play.md). Fail a single Three.js request, recover with Retry, and check that the game reaches its controls. Use the same sequence to test an agent’s claim that a UI fix works.
 
 ## How to use it
 
