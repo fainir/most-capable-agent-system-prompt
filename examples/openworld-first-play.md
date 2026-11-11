@@ -38,13 +38,13 @@ retry.addEventListener('click', event => {
 });
 ```
 
-After the scene and controls are initialized, dispatch `document.dispatchEvent(new Event('ow-base-ready'))` from the module. Keep `if (document.getElementById('ow-base-play').hidden) return;` at the top of `startGame` so old entry points honor the same gate. Put the Start button inside the overlay whose click handler calls `startGame`. Remove the document-wide start-on-keydown listener. Enter and Space activate the focused button. Touch users see **Tap to play**.
+After the scene and controls are initialized, dispatch `document.dispatchEvent(new Event('ow-base-ready'))` from the module. Add `if (document.getElementById('ow-base-play').hidden) return;` at the top of `startGame` so old entry points honor the same gate. Put the Start button inside the overlay whose click handler calls `startGame`. Remove the document-wide start-on-keydown listener. Enter and Space activate the focused button. Touch users see **Tap to play**.
 
 The linked patch also stops button events from reaching the game’s input handlers. It applies the change to the known demo template and keeps the existing iframe sandbox. [Startup patch](https://github.com/fainir/open-world/pull/19/files)
 
 ## Verify failure, recovery and first play
 
-Use Playwright with Google Chrome installed. Save this as `first-play.mjs` in a project with `playwright` and run `node first-play.mjs`. It aborts the first module request. Retry loads it again. The final assertion checks for the game’s controls after pressing Start.
+Use Playwright with Google Chrome installed. Save this as `first-play.mjs` in a project with `playwright` and run `node first-play.mjs`. It aborts the first Three.js request. Retry loads it again. The final assertion checks for the game’s controls after pressing Start.
 
 ```js
 import assert from 'node:assert/strict';
