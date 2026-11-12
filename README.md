@@ -61,7 +61,9 @@ On Linux, replace `| LANG=en_US.UTF-8 pbcopy` with `| xclip -selection clipboard
 
 [Watch the 54-second Hired in 60 drill](https://youtu.be/frJjFcm0njk) for a related Python interview example that shows how a failing test exposes a bad edit.
 
-For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com/l/rbzbacf?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-review-pack) includes a free worked Git question and a sample PDF. The full pack costs $12.
+[Try the free React Reset exercise](https://hiredin60.com/lessons/090/#react-state-practice) to test whether a filter toggle and results badge share the same state.
+
+For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com/l/rbzbacf?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-react-practice-pack) includes a free worked Git question and a sample PDF. The full pack costs $12.
 
 ### Test the first click in a browser
 
