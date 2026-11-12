@@ -30,6 +30,7 @@ For AI and ML news, [read MyFeed's public topic feed](https://myfeed.space/ai?ut
 ## Contents
 
 - [Quick start](#quick-start)
+  - [Try one task with a check](#try-one-task-with-a-check)
   - [Try a prompt regression offline](#try-a-prompt-regression-offline)
   - [Test the first click in a browser](#test-the-first-click-in-a-browser)
 - [How to use it](#how-to-use-it)
@@ -54,6 +55,10 @@ curl -fsSL https://raw.githubusercontent.com/fainir/most-capable-agent-system-pr
 ```
 
 On Linux, replace `| LANG=en_US.UTF-8 pbcopy` with `| xclip -selection clipboard` or `| wl-copy`. To save it to a file instead, replace it with `> prompt.md`.
+
+### Try one task with a check
+
+In a new project folder, paste the system prompt into your coding agent. Then [try a six-row CSV cleanup](examples/verified-first-task.md) as its first task. The exercise gives the agent a concrete output to verify before it calls the task done.
 
 ### Try a prompt regression offline
 
