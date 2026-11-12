@@ -23,7 +23,7 @@ Left alone, most agent sessions forget everything between runs, call work done w
 
 For AI crawler access, save the public HTML and robots.txt, then verify any crawler visits in your CDN or server logs. [Follow the AI crawler access checklist](https://betterloopai.com/docs/ai-crawler-access?utm_source=github&utm_medium=readme&utm_campaign=mcasp-crawler-guide).
 
-If you maintain several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=mcasp-multi-site).
+If you maintain several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing/from-readme).
 
 For AI and ML news, [read MyFeed's public topic feed](https://myfeed.space/ai?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed) or [add it to your RSS reader](https://myfeed.space/ai/rss.xml?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed).
 
