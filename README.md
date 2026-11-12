@@ -58,7 +58,7 @@ On Linux, replace `| LANG=en_US.UTF-8 pbcopy` with `| xclip -selection clipboard
 
 ### Try one task with a check
 
-In a new project folder, paste the system prompt into your coding agent. When it asks for a first task, [try a six-row CSV cleanup](examples/verified-first-task.md). The exercise gives the agent a concrete output to verify before it calls the task done.
+In a new project folder, paste the system prompt into your coding agent. Then [try a six-row CSV cleanup](examples/verified-first-task.md) as its first task. The exercise gives the agent a concrete output to verify before it calls the task done.
 
 ### Try a prompt regression offline
 

@@ -14,7 +14,7 @@ archive example,done
 draft reply,open
 ```
 
-Paste the system prompt into your coding agent. When it asks what to build first, give it this task:
+Paste the system prompt into your coding agent. Give it this first task:
 
 > Use only incoming.csv in this folder. Create done.csv with the header and each unique row whose status is exactly done, in its original order. Keep incoming.csv intact. Run a check that compares the actual output with the three expected rows. Show me the result and the command you ran.
 
