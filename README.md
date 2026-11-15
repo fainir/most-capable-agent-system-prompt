@@ -80,6 +80,10 @@ To test a file upload, open [pocket-test.csv](examples/pocket-test.csv). On desk
 
 Select **Import your Pocket export** and choose the sample file. The preview should say **1 link · read as Pocket export**. For this test, stop at the preview.
 
+In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To save it to a free account, choose **Keep workspace** and follow the verification link in the same private session.
+
+I build Plainer. [Plainer Pro](https://plainer.app/pricing/from-agent-guide) gives you a personal allowance for its built-in assistant. The 14-day trial requires a card. The monthly plan renews at $8 a month unless cancelled.
+
 ## How to use it
 
 | Option | How | Trade-offs |
@@ -3365,6 +3369,4 @@ Use this map when you are building or improving one subsystem at a time. Study t
 - [recall](https://github.com/fainir/recall) - your Claude Code memory in every agent, over MCP
 - [All projects](https://nirfeinste.in/#open-source)
 
-Products by the same author: [Run a free Betterloop check](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to see what to fix on your site, [open the Plainer starter workspace](https://plainer.app/demo?example=starter&utm_source=github&utm_medium=readme&utm_campaign=mcasp) to try notes and boards without an account, or [try VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to direct a 3D storyboard before paying to render.
-
-For a larger personal assistant allowance, [create an account for the 14-day Plainer Pro trial](https://plainer.app/signin?mode=signup&from=pro&plan=monthly&utm_source=github&utm_medium=readme&utm_campaign=mcasp-plainer-trial). A card is required. The monthly plan renews at $8 a month unless cancelled.
+Products by the same author: [Run a free Betterloop check](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to see what to fix on your site, [try the Plainer checklist](#test-the-first-click-in-a-browser) to check that an edit survives reload, or [try VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to direct a 3D storyboard before paying to render.
