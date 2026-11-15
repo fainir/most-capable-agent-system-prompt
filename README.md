@@ -19,7 +19,7 @@ Left alone, most agent sessions forget everything between runs, call work done w
 
 **Try a working example:** [Apps and starter projects](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#projects) · [Full portfolio and concepts](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#portfolio) · [Open-source tools](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#open-source).
 
-**A real website QA check.** The demo site’s HTTPS page worked, and its old HTTP URL still served the page. [Watch the 30-second redirect walkthrough](https://github.com/fainir#two-things-i-built-and-tested) and [run the same free check on your site](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=https-redirect-short).
+**Try a pre-launch website check.** The demo site served the page over both HTTP and HTTPS. [Run the free check on your public URL](https://betterloopai.com/check/from-agent-readme) without signing up. Pick one finding to verify and fix. When you rerun the check, allow the 15-minute report cache to expire. [Watch the 30-second redirect walkthrough](https://github.com/fainir#two-things-i-built-and-tested).
 
 For AI crawler access, save the public HTML and robots.txt, then verify any crawler visits in your CDN or server logs. [Follow the AI crawler access checklist](https://betterloopai.com/docs/ai-crawler-access?utm_source=github&utm_medium=readme&utm_campaign=mcasp-crawler-guide).
 
