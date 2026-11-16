@@ -103,7 +103,7 @@ The prompt supports both paths (see `IMPLEMENTATION POSTURE` inside it):
 
 To choose, add a line after the prompt, for example `Use harness-wrapper mode around Claude Code.` or `Use native runtime mode on the Claude Agent SDK, in TypeScript.`
 
-A small services team spending 10 hours a week on lead follow-up can capture enquiries in its CRM and draft replies for a person to approve. Start with one inbound channel and track how many drafts need edits. [Request implementation help from AI Your Work](https://aiyourwork.chat/services?utm_source=github&utm_medium=readme&utm_campaign=agent-workflow-assessment#implementation-request).
+A small services team spending 10 hours a week on lead follow-up can capture enquiries in its CRM and draft replies for a person to approve. Start with one inbound channel and track how many drafts need edits. Run a fictional enquiry in your browser, then replay it to see how the example keeps one CRM record and one draft. [Try the sample handoff](https://aiyourwork.chat/guides/lead-follow-up-for-service-companies?utm_source=github&utm_medium=readme&utm_campaign=lead-follow-up-demo-en#sample-enquiry). [Request implementation help from AI Your Work](https://aiyourwork.chat/services?utm_source=github&utm_medium=readme&utm_campaign=agent-workflow-assessment#implementation-request).
 
 ## What to expect
 
