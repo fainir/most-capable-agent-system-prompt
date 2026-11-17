@@ -27,6 +27,10 @@ For AI crawler access, save the public HTML and robots.txt, then verify any craw
 
 If you maintain several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing/from-readme).
 
+**Test that a browser edit persists.** In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To save it to a free account, choose **Keep workspace** and follow the verification link in the same private session.
+
+I build Plainer. [Plainer Pro](https://plainer.app/pricing/from-agent-guide) gives you a personal allowance for its built-in assistant. The 14-day trial requires a card. The monthly plan renews at $8 a month unless cancelled.
+
 For AI and ML news, [read MyFeed's public topic feed](https://myfeed.space/ai?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed) or [add it to your RSS reader](https://myfeed.space/ai/rss.xml?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed).
 
 ## Contents
@@ -81,10 +85,6 @@ For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com
 To test a file upload, open [pocket-test.csv](examples/pocket-test.csv). On desktop, choose **Download raw file**. On a phone, open **Edit and raw actions** and choose **Download**. In a signed-out browser, open [the KeepFinding guest importer](https://keepfind.ing/pocket?utm_source=github&utm_medium=readme&utm_campaign=mcasp-pocket-preview).
 
 Select **Import your Pocket export** and choose the sample file. The preview should say **1 link · read as Pocket export**. For this test, stop at the preview.
-
-In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To save it to a free account, choose **Keep workspace** and follow the verification link in the same private session.
-
-I build Plainer. [Plainer Pro](https://plainer.app/pricing/from-agent-guide) gives you a personal allowance for its built-in assistant. The 14-day trial requires a card. The monthly plan renews at $8 a month unless cancelled.
 
 ## How to use it
 
