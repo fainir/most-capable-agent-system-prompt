@@ -2,6 +2,10 @@
 
 OpenWorld’s built-in demo game runs inside an iframe. The title screen originally displayed **Click or press anything to start** before its JavaScript module loaded. If the module failed, the screen kept showing that prompt and the controls never became ready. [OpenWorld startup change](https://github.com/fainir/open-world/pull/19)
 
+## Play Enchanted Forest
+
+[Open the free demo](https://open-world.gg/play/from-agent-guide). Choose **Tap to play** on a phone or **Start game** on desktop, then try the controls. The browser check below repeats that first action after a simulated loading failure.
+
 ## Wait for the game to be ready
 
 Render a status message, a hidden native Start button and a hidden Retry button. Give the module script the `ow-base-module` ID so the error handler can recognize its failure.
