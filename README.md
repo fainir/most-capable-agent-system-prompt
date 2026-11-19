@@ -17,6 +17,8 @@ Left alone, most agent sessions forget everything between runs, call work done w
 
 > **Want a ready-made version today?** [agent-harness](https://github.com/fainir/agent-harness) packages the operating rules this prompt asks your agent to build (done means verified with evidence, ledgers that keep long work going, one owner action at a time) as installable skills and hooks for Claude Code and Codex. Use this prompt to have your agent build its own system; use agent-harness to start from a working one.
 
+[Request a free setup review](https://aiyourwork.chat/services?utm_source=github&utm_medium=readme&utm_campaign=agent-harness-setup#implementation-request) to plan a harness installation in one repository. Share the coding agent you use and one workflow you want to verify. We agree on scope and price before any paid work.
+
 **Try a working example:** [Apps and starter projects](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#projects) · [Full portfolio and concepts](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#portfolio) · [Open-source tools](https://nirfeinste.in/?utm_source=github&utm_medium=readme&utm_campaign=mcasp-portfolio#open-source).
 
 **Try a pre-launch website check.** The demo site served the page over both HTTP and HTTPS. [Run the free check on your public URL](https://betterloopai.com/check/from-agent-readme) without signing up. Pick one finding to verify and fix. When you rerun the check, allow the 15-minute report cache to expire. [Watch the 30-second redirect walkthrough](https://github.com/fainir#two-things-i-built-and-tested).
