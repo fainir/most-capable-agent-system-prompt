@@ -68,6 +68,8 @@ On Linux, replace `| LANG=en_US.UTF-8 pbcopy` with `| xclip -selection clipboard
 
 In a new project folder, paste the system prompt into your coding agent. Then [try a six-row CSV cleanup](examples/verified-first-task.md) as its first task. The exercise gives the agent a concrete output to verify before it calls the task done.
 
+[Check a cart quantity change with a coding agent](examples/cart-quantity-check.md). Run eight checks against the same fictional change, then compare the diff and test output.
+
 [Test whether an assistant can undo its own edit](examples/plainer-assistant-undo.md). Save a manual note, let the assistant create a second one, and check what survives Undo.
 
 [Verify a project handoff in Gemini CLI](examples/plainer-gemini-handoff.md). Give the agent read access to a sample workspace, then check that it can quote the note and spot a missing detail.
