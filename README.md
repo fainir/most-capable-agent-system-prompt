@@ -82,6 +82,8 @@ In a new project folder, paste the system prompt into your coding agent. Then [t
 
 [Check a cart quantity change with a coding agent](examples/cart-quantity-check.md). Run eight checks against the same fictional change, then compare the diff and test output.
 
+[Catch inflated order counts in a SQL report](examples/sql-order-count.md). Run the SQLite tests, fix the count, and confirm that the report keeps orders with no line items and customers with no orders.
+
 [Test whether an assistant can undo its own edit](examples/plainer-assistant-undo.md). Save a manual note, let the assistant create a second one, and check what survives Undo.
 
 [Read a project note from Gemini CLI](examples/plainer-gemini-handoff.md). Install the Plainer extension on Free, grant read access to a sample workspace, and check that the answer quotes the source note and spots a missing detail.
