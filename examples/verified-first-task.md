@@ -51,3 +51,11 @@ PY
 An open task, duplicate row or reordered result fails the check. Ask the agent to fix the output and run the same check again.
 
 If you try it, [report the result in an issue](https://github.com/fainir/most-capable-agent-system-prompt/issues/new). Include the agent you used, whether it ran the check before calling the task done, and the PASS or FAIL line. Keep your real project data private.
+
+## Review a recurring CSV workflow
+
+If you prepare the same file each week, you can adapt this brief for a [free workflow review through AI Your Work](https://aiyourwork.chat/services?utm_source=github&utm_medium=example&utm_campaign=csv-workflow-review#implementation-request).
+
+> Every Friday I get a task export. Keep the first occurrence of each row whose status is exactly done, in its original order, and leave the input intact. Show the counts of rows read, kept and removed. Ask for approval before writing the result to our shared folder.
+
+Describe the column names or use fictional data. If the review leads to paid implementation, you agree on scope and price before work starts.
