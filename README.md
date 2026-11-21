@@ -100,7 +100,9 @@ For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com
 
 ### Test the first click in a browser
 
-[Walk through the OpenWorld startup repair](examples/openworld-first-play.md). Fail a single Three.js request, recover with Retry, and check that the game reaches its controls. Use the same sequence to test an agent’s claim that a UI fix works.
+[Play Enchanted Forest](https://open-world.gg/play/from-agent-guide). Choose **Tap to play** on a phone or **Start game** on desktop.
+
+[See the first-play preview and startup check](examples/openworld-first-play.md#play-enchanted-forest). Recover a failed Three.js load with Retry and check that the same game reaches its controls.
 
 To test a file upload, open [pocket-test.csv](examples/pocket-test.csv). On desktop, choose **Download raw file**. On a phone, open **Edit and raw actions** and choose **Download**. In a signed-out browser, open [the KeepFinding guest importer](https://keepfind.ing/pocket?utm_source=github&utm_medium=readme&utm_campaign=mcasp-pocket-preview).
 
