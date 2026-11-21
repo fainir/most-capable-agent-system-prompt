@@ -41,7 +41,7 @@ For AI crawler access, save the public HTML and robots.txt, then verify any craw
 
 For a site you can deploy, [verify your first monitoring event](https://betterloopai.com/docs/install#verify) by setting up one Free project, installing its snippet and checking for a stored pageview. For several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing/from-readme).
 
-**Test that a browser edit persists.** In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To save it to a free account, choose **Keep workspace** and follow the verification link in the same private session.
+**Test that a browser edit persists.** In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To keep the edit in a free account, choose **Sign up** in the note. Open the email verification link in the same private window, then sign in there.
 
 I build Plainer. [Plainer Pro](https://plainer.app/pricing/from-agent-guide) gives you a personal allowance for its built-in assistant. The 14-day trial requires a card. The monthly plan renews at $8 a month unless cancelled.
 
