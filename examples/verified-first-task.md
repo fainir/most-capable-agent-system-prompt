@@ -56,6 +56,6 @@ If you try it, [report the result in an issue](https://github.com/fainir/most-ca
 
 If you prepare the same file each week, you can adapt this brief for a [free workflow review through AI Your Work](https://aiyourwork.chat/services?utm_source=github&utm_medium=example&utm_campaign=csv-workflow-review#implementation-request).
 
-> Every Friday I get a task export. Create one file with the first occurrence of each completed row, in its original order, and keep the input intact. Show the counts of rows read, kept and removed. Ask for approval before writing the result to our shared folder.
+> Every Friday I get a task export. Keep the first occurrence of each row whose status is exactly done, in its original order, and leave the input intact. Show the counts of rows read, kept and removed. Ask for approval before writing the result to our shared folder.
 
 Describe the column names or use fictional data. If the review leads to paid implementation, you agree on scope and price before work starts.
