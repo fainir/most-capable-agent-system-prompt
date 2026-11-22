@@ -88,6 +88,8 @@ In a new project folder, paste the system prompt into your coding agent. Then [t
 
 [Read a project note from Gemini CLI](examples/plainer-gemini-handoff.md). Install the Plainer extension on Free, grant read access to a sample workspace, and check that the answer quotes the source note and spots a missing detail.
 
+[Turn meeting notes into a checked action list](examples/plainer-meeting-notes.md). Try fictional notes with a decision, missing dates, and a suggestion that was never agreed.
+
 **Try a screen-reading task on Android.** Handy AI uses Claude and needs Android 11 or later and Accessibility permission. [Install Handy AI from Google Play](https://play.google.com/store/apps/details?id=com.claudeagent.phone&utm_source=github&utm_campaign=mcasp_handy_screen_read), then [follow the setup guide](https://gethandyai.app/#install). Open a screen with text you know and are comfortable sharing. Say or type “Read the text on this screen,” then check that Handy AI reads a line that is actually there.
 
 ### Try a prompt regression offline
