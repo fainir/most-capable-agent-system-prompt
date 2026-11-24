@@ -23,3 +23,5 @@ Ask your coding agent to change only the SQL in `REPORT` and show you the diff a
 ## Keep practicing
 
 The author’s [free Hired in 60 SQL exercise](https://hiredin60.com/lessons/165/?utm_source=github&utm_medium=example&utm_campaign=sql-order-count#sql-left-join-practice) lets you predict the output before revealing the answer. The [optional $12 interview review pack](https://hiredin60.com/shop) has a free sample on the Shop page.
+
+Try pagination after the count is correct. If several rows have the same sort value, add a unique tie-breaker and use both columns in the next-page cursor. The [free three-lesson SQL practice set](https://hiredin60.com/playlists/sql-interview-practice/?utm_source=github&utm_medium=example&utm_campaign=sql-order-count-practice-set) includes a worked pagination question.
