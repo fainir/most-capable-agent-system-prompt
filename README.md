@@ -112,6 +112,8 @@ For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com
 
 [See the first-play preview and startup check](examples/openworld-first-play.md#play-enchanted-forest). Recover a failed Three.js load with Retry and check that the same game reaches its controls.
 
+[Play Hangar Lake Resort](https://open-world.gg/play/resort-from-agent-guide). On a phone, turn it sideways. [See the controls and a short preview](examples/openworld-first-play.md#play-hangar-lake-resort).
+
 To test a file upload, open [pocket-test.csv](examples/pocket-test.csv). On desktop, choose **Download raw file**. On a phone, open **Edit and raw actions** and choose **Download**. In a signed-out browser, open [the KeepFinding guest importer](https://keepfind.ing/pocket?utm_source=github&utm_medium=readme&utm_campaign=mcasp-pocket-preview).
 
 Select **Import your Pocket export** and choose the sample file. The preview should say **1 link · read as Pocket export**. For this test, stop at the preview. To check that a saved date survives a complete import, try the [Pocket and Raindrop date exercise](examples/keepfinding-import-dates.md).
