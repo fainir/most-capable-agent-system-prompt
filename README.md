@@ -104,7 +104,9 @@ In a new project folder, paste the system prompt into your coding agent. Then [t
 
 [Try the free React Reset exercise](https://hiredin60.com/lessons/090/#react-state-practice) to test whether a filter toggle and results badge share the same state.
 
-For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com/l/rbzbacf?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-react-practice-pack) includes a free worked Git question and a sample PDF. The full pack costs $12.
+For Git interview practice, [try the free lost-commit recovery exercise](https://hiredin60.com/lessons/159/?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-git-recovery#git-recovery-title). Find the commit with `git reflog --oneline` and inspect it with `git show <commit>`. Create a rescue branch with `git branch recovered-work <commit>` to keep the commit reachable while leaving your current branch and working tree intact.
+
+The optional [Interview Quick Review Pack](https://fainir.gumroad.com/l/rbzbacf?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-react-practice-pack) covers Git undo and other interview topics. The full pack costs $12. [Preview the free sample PDF](https://hiredin60.com/quick-review-sample.pdf).
 
 ### Test the first click in a browser
 
