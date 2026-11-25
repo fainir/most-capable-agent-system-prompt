@@ -106,7 +106,7 @@ In a new project folder, paste the system prompt into your coding agent. Then [t
 
 For Git interview practice, [try the free lost-commit recovery exercise](https://hiredin60.com/lessons/159/?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-git-recovery#git-recovery-title). Find the commit with `git reflog --oneline` and inspect it with `git show <commit>`. Create a rescue branch with `git branch recovered-work <commit>` to keep the commit reachable while leaving your current branch and working tree intact.
 
-The optional [Interview Quick Review Pack](https://fainir.gumroad.com/l/rbzbacf?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-react-practice-pack) covers Git undo and other interview topics. The full pack costs $12. [Preview the free sample PDF](https://hiredin60.com/quick-review-sample.pdf).
+[Preview the free sample PDF](https://hiredin60.com/quick-review-sample.pdf). For more Git undo and interview practice, [open the $12 Interview Quick Review Pack checkout](https://fainir.gumroad.com/l/rbzbacf?wanted=true&utm_source=github&utm_medium=readme&utm_campaign=coding-agent-readme-git-review-pack).
 
 ### Test the first click in a browser
 
