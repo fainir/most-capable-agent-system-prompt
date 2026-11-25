@@ -89,4 +89,10 @@ The full check also holds the module request open to verify that **Loading gameâ
 
 Open the live demo to see the normal loading and Start states. [Live OpenWorld game](https://open-world.gg/?utm_source=github&utm_medium=readme&utm_campaign=openworld-first-play)
 
+## Play Hangar Lake Resort
+
+Open [Hangar Lake Resort](https://open-world.gg/play/resort-from-agent-guide) and choose **Play the resort**. On a phone, turn it sideways for the movement controls. Select **Go outside** to explore beyond the house.
+
+![A live capture of an avatar walking near the entrance at Hangar Lake Resort.](openworld-hangar-lake-play.gif)
+
 *AI generated this guide from the linked source and verified browser tests.*
