@@ -45,3 +45,51 @@ Use this option if your project allows `http://127.0.0.1:8765` and you prefer to
 Run the same Python command above and open `http://127.0.0.1:8765/betterloop-pageview-test.html`. The first pageview should show in Setup. To inspect it, open the browser’s Network panel on the test page before reloading. Look for a `POST /api/ingest` response of HTTP 200 with `{"ok":true}`.
 
 </details>
+
+## Count pageviews from a Vite bundle
+
+Use the app's own bundle to count one view of its configured base path per opted-in load. The example uses the browser's `fetch` and a Free Betterloop project.
+
+1. Open a [Free monitoring project](https://betterloopai.com/signup?from=docs-monitoring&utm_source=github&utm_medium=example&utm_campaign=vite_pageview_only). Copy the public project write key from **Setup**. If you use **Allowed origins**, include your exact deployed origin.
+2. In the environment that runs `npm run build`, set `VITE_BETTERLOOP_WRITE_KEY` to that public write key and `VITE_ANALYTICS_ORIGIN` to the deployed HTTPS origin, such as `https://example.com` with the scheme and without a path or trailing slash. Set Vite's `base` to the deployed pathname, such as `/` or `/my-app/`.
+3. Put this in `src/analytics.ts` and import it in the app entry module. Keep analytics off by default and remember either choice in your app. Call the function with the current choice after startup or when the visitor grants permission. In React, the entry module or the choice handler keeps this outside the render tree.
+
+```ts
+let countedPageview = false
+
+export function countPageview(analyticsAllowed: boolean): void {
+  const key = import.meta.env.VITE_BETTERLOOP_WRITE_KEY
+  const signals = navigator as Navigator & { globalPrivacyControl?: boolean }
+
+  if (
+    countedPageview ||
+    !analyticsAllowed ||
+    !import.meta.env.PROD ||
+    !key ||
+    location.origin !== import.meta.env.VITE_ANALYTICS_ORIGIN ||
+    location.pathname !== import.meta.env.BASE_URL ||
+    signals.doNotTrack === '1' ||
+    signals.globalPrivacyControl === true
+  ) {
+    return
+  }
+
+  countedPageview = true
+  void fetch('https://betterloopai.com/api/ingest', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    credentials: 'omit',
+    referrerPolicy: 'no-referrer',
+    body: JSON.stringify({
+      key,
+      sid: crypto.randomUUID(),
+      url: location.origin,
+      events: [{ t: 'pageview', ts: Date.now(), path: import.meta.env.BASE_URL }],
+    }),
+  }).catch((): undefined => undefined)
+}
+```
+
+On the deployed page, confirm one `POST /api/ingest` response of `200` with `{"ok":true}` after allowing analytics. Check **Setup** for **Connected. Events received.** If it's already connected, check the pageview total for the base path. Confirm zero requests before permission, after declining, in development and in local preview. When the page has a Content Security Policy, allow `https://betterloopai.com` in `connect-src`. [Ingest contract](https://betterloopai.com/docs/api#ingest).
+
+Use pageview totals for this example. Each load sends a fresh ID and the code keeps that ID in memory for the request. The request omits cookies and referrers. Your privacy note should name Betterloop and describe the received origin, path, timestamp, ID and browser User-Agent. Betterloop uses the request IP for rate limiting. [Betterloop data handling](https://betterloopai.com/docs/privacy).
