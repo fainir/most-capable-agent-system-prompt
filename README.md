@@ -112,7 +112,7 @@ For interview prep, the [Interview Quick Review Pack](https://fainir.gumroad.com
 
 To test a file upload, open [pocket-test.csv](examples/pocket-test.csv). On desktop, choose **Download raw file**. On a phone, open **Edit and raw actions** and choose **Download**. In a signed-out browser, open [the KeepFinding guest importer](https://keepfind.ing/pocket?utm_source=github&utm_medium=readme&utm_campaign=mcasp-pocket-preview).
 
-Select **Import your Pocket export** and choose the sample file. The preview should say **1 link · read as Pocket export**. For this test, stop at the preview.
+Select **Import your Pocket export** and choose the sample file. The preview should say **1 link · read as Pocket export**. For this test, stop at the preview. To check that a saved date survives a complete import, try the [Pocket and Raindrop date exercise](examples/keepfinding-import-dates.md).
 
 ## How to use it
 
