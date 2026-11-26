@@ -100,7 +100,7 @@ In a new project folder, paste the system prompt into your coding agent. Then [t
 
 [Run the RegressGuard quick start](https://github.com/fainir/regressguard#quick-start) with Python 3.11 or later. Run the same three cases against two sets of saved model replies. The baseline passes all three. The changed replies fail two and return exit code `1`. The stub runs locally without an API key.
 
-[Watch the 54-second Hired in 60 drill](https://youtu.be/frJjFcm0njk) for a related Python interview example that shows how a failing test exposes a bad edit.
+Try the [free Python interview question in your browser](https://hiredin60.com/lessons/117/?utm_source=github&utm_medium=readme&utm_campaign=coding-agent-ai-code-practice). Predict the result, then reveal the counterexample to an AI edit that sorts the items. The [54-second walkthrough](https://youtu.be/frJjFcm0njk) shows the same case.
 
 [Try the free React Reset exercise](https://hiredin60.com/lessons/090/#react-state-practice) to test whether a filter toggle and results badge share the same state.
 
