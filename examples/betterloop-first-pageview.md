@@ -93,3 +93,15 @@ export function countPageview(analyticsAllowed: boolean): void {
 On the deployed page, confirm one `POST /api/ingest` response of `200` with `{"ok":true}` after allowing analytics. Check **Setup** for **Connected. Events received.** If it's already connected, check the pageview total for the base path. Confirm zero requests before permission, after declining, in development and in local preview. When the page has a Content Security Policy, allow `https://betterloopai.com` in `connect-src`. [Ingest contract](https://betterloopai.com/docs/api#ingest).
 
 Use pageview totals for this example. Each load sends a fresh ID and the code keeps that ID in memory for the request. The request omits cookies and referrers. Your privacy note should name Betterloop and describe the received origin, path, timestamp, ID and browser User-Agent. Betterloop uses the request IP for rate limiting. [Betterloop data handling](https://betterloopai.com/docs/privacy).
+
+## Read the pageview count in Claude Code
+
+After Betterloop receives the event, [connect Claude Code to Betterloop](https://betterloopai.com/docs/mcp/from-coding-agent-claude). The Betterloop API key can read every project in your account. Set it in your terminal environment and use the guide’s command, which saves a reference to the variable.
+
+Replace `Launch site` with the name of the project you just tested and give Claude Code this prompt.
+
+> Use Betterloop to find my project named “Launch site”. Run `get_metrics` with `days: 1` and show the pageview total and top pages.
+
+Existing site traffic and repeated loads can raise the count. To compare with the Analytics Pageviews card, repeat the query with `days: 7` for the same project.
+
+If you made the key for this exercise, revoke it from **API Keys** when you finish.
