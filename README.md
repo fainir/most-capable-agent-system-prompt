@@ -37,6 +37,8 @@ Ask before: Merging or publishing.
 
 If `/docs` redirects to `/docs/` and `/docs/` is the intended search URL, check the full `/docs` address. If the report flags a canonical redirect, use the final HTTP 200 URL in the canonical tag, sitemap and matching `hreflang` links.
 
+For a bilingual cutover, verify the localized pages and old-host redirects before switching traffic. [Run the Astro cutover fixture](examples/astro-bilingual-cutover.md).
+
 For AI crawler access, save the public HTML and robots.txt, then verify any crawler visits in your CDN or server logs. [Follow the AI crawler access checklist](https://betterloopai.com/docs/ai-crawler-access?utm_source=github&utm_medium=readme&utm_campaign=mcasp-crawler-guide).
 
 **Verify a first monitoring event.** [Run one Betterloop pageview on localhost](examples/betterloop-first-pageview.md) with the ready-to-copy test page in your Free project. [Check a deployed site](https://betterloopai.com/docs/install#verify) with the same snippet, or use the [pageview-only example for Vite](examples/betterloop-first-pageview.md#count-pageviews-from-a-vite-bundle). Once Betterloop receives an event, [read the pageview count in Claude Code](examples/betterloop-first-pageview.md#read-the-pageview-count-in-claude-code). For several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing/from-readme).
