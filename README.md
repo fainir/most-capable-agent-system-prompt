@@ -43,6 +43,8 @@ For AI crawler access, save the public HTML and robots.txt, then verify any craw
 
 **Test that a browser edit persists.** In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To keep the edit in a free account, choose **Sign up** in the note. Open the email verification link in the same private window, then sign in there.
 
+**Check a meeting handoff.** [Use a fictional meeting to verify decisions, owners and due dates](examples/plainer-meeting-notes.md) before using the prompt on team notes.
+
 I build Plainer. [Plainer Pro](https://plainer.app/pricing/from-agent-guide) gives you a personal allowance for its built-in assistant. The 14-day trial requires a card. The monthly plan renews at $8 a month unless cancelled.
 
 For AI and ML news, [read MyFeed's public topic feed](https://myfeed.space/ai?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed) or [add it to your RSS reader](https://myfeed.space/ai/rss.xml?utm_source=github&utm_medium=readme&utm_campaign=mcasp-ai-feed).
@@ -89,8 +91,6 @@ In a new project folder, paste the system prompt into your coding agent. Then [t
 [Test whether an assistant can undo its own edit](examples/plainer-assistant-undo.md). Save a manual note, let the assistant create a second one, and check what survives Undo.
 
 [Read a project note from Gemini CLI](examples/plainer-gemini-handoff.md). Install the Plainer extension on Free, grant read access to a sample workspace, and check that the answer quotes the source note and spots a missing detail.
-
-[Turn meeting notes into a checked action list](examples/plainer-meeting-notes.md). Try fictional notes with a decision, missing dates, and a suggestion that was never agreed.
 
 [Trace a human approval before the agent continues](https://www.humanindaloopai.com/self-host/from-agent-guide). In this simulated Human in da Loop example, an agent waits for a decision on a refund outside the 30-day window. Check that the reviewer’s store-credit choice and the `answered` status reach the agent. The guide opens before sign-in and links to the installer for a local run.
 
