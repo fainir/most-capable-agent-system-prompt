@@ -143,6 +143,8 @@ To choose, add a line after the prompt, for example `Use harness-wrapper mode ar
 
 A small services team spending 10 hours a week on lead follow-up can capture enquiries in its CRM and draft replies for a person to approve. Start with one inbound channel and track how many drafts need edits. Run a fictional enquiry in your browser, then replay it to see how the example keeps one CRM record and one draft. [Try the sample handoff](https://aiyourwork.chat/guides/lead-follow-up-for-service-companies?utm_source=github&utm_medium=readme&utm_campaign=lead-follow-up-demo-en#sample-enquiry). [Request implementation help from AI Your Work](https://aiyourwork.chat/services?utm_source=github&utm_medium=readme&utm_campaign=agent-workflow-assessment#implementation-request).
 
+If your enquiry form can time out, try a local check for duplicate submissions and uncertain delivery. [Run the enquiry retry exercise](examples/enquiry-retry.md).
+
 ## What to expect
 
 - **It is long.** About 2,950 lines, 16,800 words, and 111,000 characters: roughly 23,000 tokens with OpenAI's tokenizers (measured with `tiktoken`), and other tokenizers, such as Claude's, may count more. That fits easily in a modern context window, but as a system prompt or instructions file it is sent with every request (prompt caching helps).
