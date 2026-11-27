@@ -41,6 +41,8 @@ For AI crawler access, save the public HTML and robots.txt, then verify any craw
 
 **Verify a first monitoring event.** [Run one Betterloop pageview on localhost](examples/betterloop-first-pageview.md) with the ready-to-copy test page in your Free project. [Check a deployed site](https://betterloopai.com/docs/install#verify) with the same snippet, or use the [pageview-only example for Vite](examples/betterloop-first-pageview.md#count-pageviews-from-a-vite-bundle). Once Betterloop receives an event, [read the pageview count in Claude Code](examples/betterloop-first-pageview.md#read-the-pageview-count-in-claude-code). For several client sites, Betterloop Pro gives you daily insight runs across up to five projects for $19 a month plus applicable tax. [See Pro pricing and how to start](https://betterloopai.com/pricing/from-readme).
 
+**Verify a conversion after a retry.** [Run the inquiry and booking exercise](examples/betterloop-inquiry-bookings.md) to check that a confirmation counts once and that an analytics opt-out still preserves the inquiry in your app.
+
 **Test that a browser edit persists.** In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To keep the edit in a free account, choose **Sign up** in the note. Open the email verification link in the same private window, then sign in there.
 
 **Check a meeting handoff.** [Use a fictional meeting to verify decisions, owners and due dates](examples/plainer-meeting-notes.md) before using the prompt on team notes.
