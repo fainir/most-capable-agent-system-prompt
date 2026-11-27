@@ -45,7 +45,7 @@ For AI crawler access, save the public HTML and robots.txt, then verify any craw
 
 **Verify a conversion after a retry.** [Run the inquiry and booking exercise](examples/betterloop-inquiry-bookings.md) to check that a confirmation counts once and that an analytics opt-out still preserves the inquiry in your app.
 
-**Test that a browser edit persists.** In a fresh private browser session, open [Plainer’s editable launch checklist](https://plainer.app/try/from-agent-guide). Add a line such as “Confirm Retry restores the controls,” reload, and check that the line is still there. To keep the edit in a free account, choose **Sign up** in the note. Open the email verification link in the same private window, then sign in there.
+**Check that a note edit survives reload.** Open [Plainer’s sample launch workspace](https://plainer.app/demo/from-agent-guide) and choose **Daylight · launch notes**. Add “Confirm Retry restores the controls,” reload, and check that the line is still there. To keep the edit, choose **Keep a copy** and continue to a free account.
 
 **Check a meeting handoff.** [Use a fictional meeting to verify decisions, owners and due dates](examples/plainer-meeting-notes.md) before using the prompt on team notes.
 
@@ -3411,4 +3411,4 @@ Use this map when you are building or improving one subsystem at a time. Study t
 - [recall](https://github.com/fainir/recall) - your Claude Code memory in every agent, over MCP
 - [All projects](https://nirfeinste.in/#open-source)
 
-Products by the same author: [Run a free Betterloop check](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to see what to fix on your site, [try the Plainer checklist](#test-the-first-click-in-a-browser) to check that an edit survives reload, or [try VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to direct a 3D storyboard before paying to render.
+Products by the same author: [Run a free Betterloop check](https://betterloopai.com/check?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to see what to fix on your site, [try the Plainer launch note](https://plainer.app/demo/from-agent-guide) to check that an edit survives reload, or [try VidGen Studio](https://vidgen.studio/?utm_source=github&utm_medium=readme&utm_campaign=mcasp) to direct a 3D storyboard before paying to render.
